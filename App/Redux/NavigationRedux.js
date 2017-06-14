@@ -31,7 +31,11 @@ export function reducer (state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'SET_REHYDRATION_COMPLETE':
       return NOT_LOGGED_IN_STATE
+    case 'LOGOUT':
+      return NOT_LOGGED_IN_STATE
     case 'LOGIN_SUCCESS':
+      return LOGGED_IN_STATE
+    case 'AUTO_LOGIN':
       return LOGGED_IN_STATE
   }
   nextState = getStateForAction(action, state)

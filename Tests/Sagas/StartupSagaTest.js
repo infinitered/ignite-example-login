@@ -1,5 +1,5 @@
 import { select, put } from 'redux-saga/effects'
-import { selectAvatar, startup } from '../../App/Sagas/StartupSagas'
+import { selectAvatar, startup, selectLoggedInStatus } from '../../App/Sagas/StartupSagas'
 import GithubActions from '../../App/Redux/GithubRedux'
 import AppStateActions from '../../App/Redux/AppStateRedux'
 
@@ -11,4 +11,5 @@ test('watches for the right action', () => {
   expect(step()).toEqual(select(selectAvatar))
   expect(step()).toEqual(put(GithubActions.userRequest('GantMan')))
   expect(step()).toEqual(put(AppStateActions.setRehydrationComplete()))
+  expect(step()).toEqual(select(selectLoggedInStatus))
 })

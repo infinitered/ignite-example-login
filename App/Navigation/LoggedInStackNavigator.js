@@ -1,12 +1,8 @@
-import React from 'react'
 import { StackNavigator } from 'react-navigation'
 import AuthenticatedScreen from '../Containers/AuthenticatedScreen'
-import {View} from 'react-native'
+import AnotherAuthenticatedScreen from '../Containers/AnotherAuthenticatedScreen'
 
 import styles from './Styles/NavigationStyles'
-
-const AnotherAuthenticatedScreen = () =>
-  <View style={{flex: 1, backgroundColor: 'green'}} />
 
 // Manifest of possible screens
 export default StackNavigator({
