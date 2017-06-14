@@ -12,6 +12,11 @@ test('success', () => {
   expect(state.username).toBe('hi')
 })
 
+test('autoLogin', () => {
+  const state = reducer(INITIAL_STATE, Actions.autoLogin())
+  expect(state.username).toBe(INITIAL_STATE.username)
+})
+
 test('failure', () => {
   const state = reducer(INITIAL_STATE, Actions.loginFailure(69))
 

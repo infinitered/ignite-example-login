@@ -7,7 +7,8 @@ const { Types, Creators } = createActions({
   loginRequest: ['username', 'password'],
   loginSuccess: ['username'],
   loginFailure: ['error'],
-  logout: null
+  logout: null,
+  autoLogin: null
 })
 
 export const LoginTypes = Types
@@ -37,13 +38,17 @@ export const failure = (state, { error }) =>
 // we've logged out
 export const logout = (state) => INITIAL_STATE
 
+// startup saga invoked autoLogin
+export const autoLogin = (state) => state
+
 /* ------------- Hookup Reducers To Types ------------- */
 
 export const reducer = createReducer(INITIAL_STATE, {
   [Types.LOGIN_REQUEST]: request,
   [Types.LOGIN_SUCCESS]: success,
   [Types.LOGIN_FAILURE]: failure,
-  [Types.LOGOUT]: logout
+  [Types.LOGOUT]: logout,
+  [Types.AUTO_LOGIN]: autoLogin
 })
 
 /* ------------- Selectors ------------- */

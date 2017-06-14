@@ -1,5 +1,5 @@
 export default {
-  useFixtures: false,
+  useFixtures: true,
   ezLogin: false,
   yellowBox: __DEV__,
   reduxLogging: __DEV__,
