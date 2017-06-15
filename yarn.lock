@@ -2414,8 +2414,9 @@ iconv-lite@~0.4.13:
   version "0.4.17"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.17.tgz#4fdaa3b38acbc2c031b045d0edcdfe1ecab18c8d"
 
-"ignite-ir-boilerplate@file:/Users/derekgreenberg/git/ignite-ir-boilerplate":
+ignite-ir-boilerplate@^2.0.0-rc.6:
   version "2.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/ignite-ir-boilerplate/-/ignite-ir-boilerplate-2.0.0-rc.6.tgz#29525d6685c6bd0395d8cc97841404f36b3555d8"
   dependencies:
     ramda "^0.23.0"
 

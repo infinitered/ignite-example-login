@@ -1,8 +1,8 @@
 import { NavigationActions } from 'react-navigation'
-import { PrimaryStackNavigator } from '../Navigation/AppNavigation'
+import { PrimaryNav } from '../Navigation/AppNavigation'
 
 const { navigate, reset } = NavigationActions
-const { getStateForAction } = PrimaryStackNavigator.router
+const { getStateForAction } = PrimaryNav.router
 
 const INITIAL_STATE = getStateForAction(
   navigate({ routeName: 'LoadingScreen' })

@@ -8,7 +8,7 @@ import NotLoggedInStackNavigator from './NotLoggedInStackNavigator'
 import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
-export const PrimaryStackNavigator = StackNavigator({
+export const PrimaryNav = StackNavigator({
   LoadingScreen: { screen: LoadingScreen },
   LoggedInStack: { screen: LoggedInStackNavigator },
   NotLoggedInStack: { screen: NotLoggedInStackNavigator }
@@ -22,7 +22,7 @@ export const PrimaryStackNavigator = StackNavigator({
 
 const Navigation = ({ dispatch, navigation }) => {
   return (
-    <PrimaryStackNavigator
+    <PrimaryNav
       navigation={addNavigationHelpers({ dispatch, state: navigation })}
     />
   )
