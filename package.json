@@ -50,7 +50,7 @@
     "babel-preset-react-native": "1.9.2",
     "enzyme": "^2.6.0",
     "husky": "^0.13.1",
-    "ignite-ir-boilerplate": "file:/Users/derekgreenberg/git/ignite-ir-boilerplate",
+    "ignite-ir-boilerplate": "^2.0.0-rc.6",
     "ignite-standard": "^1.0.0",
     "jest": "20.0.4",
     "mockery": "^2.0.0",
