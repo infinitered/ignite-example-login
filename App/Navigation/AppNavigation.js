@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { StackNavigator, addNavigationHelpers } from 'react-navigation'
-import {
-  createReduxBoundAddListener,
-} from 'react-navigation-redux-helpers'
+import { createReduxBoundAddListener } from 'react-navigation-redux-helpers'
 import LoadingScreen from '../Containers/LoadingScreen'
 import LoggedInStackNavigator from './LoggedInStackNavigator'
 import NotLoggedInStackNavigator from './NotLoggedInStackNavigator'
